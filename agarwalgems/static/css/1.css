@@ -1,0 +1,52 @@
+
+html{
+  height:100%;
+}
+.main div img:hover
+{
+  transform:scale3d(1.1,1.1,1.1);
+  transition-duration: 1s;
+}
+.transbox1{
+  background-color:transparent;
+  border:none;
+  opacity:0.9;
+  margin-top:-240px;
+  margin-left:240px;
+}
+.transbox1 p{
+  margin:4%;
+  font-size: 25px;
+  font-weight:bold;
+  color:white;
+}
+.transbox{
+  margin:40px;
+  background-color:transparent;
+  border:none;
+  opacity:0.9;
+  margin-top:-250px;
+  margin-left:240px;
+}
+.transbox p{
+  margin:4%;
+  font-size: 25px;
+  font-weight:bold;
+  color: #000000;
+}
+#slideshow {
+  margin: 80px auto;
+  position: relative;
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}

@@ -1,0 +1,36 @@
+{% include "header.html" %}
+{% block head1 %}
+{% endblock %}
+<html>
+<head>
+<title>Login Form Design</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/sty0.css' %}">
+</head>
+<body background="../static/images/s.jpg">
+<div class="loginbox" >
+<img src="{% static 'images/avatar.png' %}" class="avatar" style="margin-top: -35px;">
+<h1 style="margin-top: 40px">Login Here</h1>
+<form method="POST" action="/login1/">
+    {% csrf_token %}
+                <p>Email</p>
+                <input type="email" placeholder="Enter Email" name="Email">
+                <p>Password</p>
+                <input type="password"  placeholder="Enter Password" name="Password">
+                <input type="submit" name="submit" value="Login">
+               <b> <a href="/forgot/" style="font-size: 14px">Lost your password</a></b>
+               <br>
+               <b>
+                <a href="/signup/" style="font-size: 14px">Don't have an account?</a></b>
+            </form>   
+        </div>
+    </body> 
+   
+</html>
+<br>
+<br>
+<br>
+<br>
+{% include "footer1.html" %}
+{% block head %}
+{% endblock %}

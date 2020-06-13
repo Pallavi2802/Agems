@@ -1,0 +1,35 @@
+{% include "header.html" %}
+{% block head1 %}
+{% endblock %}
+<html>
+<head>
+<title>signup</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/sty1.css' %}">
+</head>
+<body background="../static/images/s.jpg">
+        <div class="wrap">
+            <h2> Sign up Here</h2>
+            {% if error %}
+            <h1 style="color:bisque">{{ error }}</h1>
+            {% endif %}
+            
+            <form method="POST" action="/signup1/" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="text" placeholder="Name.." required name="Name" >
+               
+                <input type="text" placeholder="Email.." required name="Email">
+                <input type="text" placeholder="Username.." required name="Username">
+                <input type="password" placeholder="Password.." required name="Password">
+                <input type="password" placeholder="confirm password" requied name="Confirmpassword ">
+                <input type="submit" value="SIGNUP">
+                </form>
+        </div>
+    </body>
+</html>
+<br>
+<br>
+<br>
+{% include "footer1.html" %}
+{% block head %}
+{% endblock %}

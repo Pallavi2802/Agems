@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Slidebar</title> 
+	<link rel="stylesheet" type="text/css" href="../static/css/style2.css">
+</head>
+<body>
+	<div id="slidebar">
+		<script>
+		function toggleSlidebar(){
+			document.getElementById("slidebar").classList.toggle("active");
+		}
+</script>
+		<div class="toggle-btn" onclick="toggleSlidebar()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul>
+			<li><a href="#">Home</li></a>
+			<li><a href="#">About</li></a>
+			<li><a href="#">Contact</li></a>
+			<li><a href="#">Dashboard</li></a>
+			<li><a href="#">Statistics</li></a>
+			<li><a href="#">Previews</li></a>
+		</ul>
+	</div>
+</body>
+</html>
+		
